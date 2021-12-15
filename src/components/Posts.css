@@ -1,0 +1,87 @@
+.photo-container{
+    height: 880vh;
+    /* width:60vw; */
+    border-radius: 20px;
+    background-color: white;
+    background-color: #3F3351;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    
+}
+
+.photo-container::-webkit-scrollbar {
+    display: none;
+}
+
+.photos{
+    position: relative;
+}
+
+.fa{
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+}
+
+.fa h4{
+    margin: 0;
+    color: #03C4A1;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+
+.icon-styling{
+    position: absolute;
+    bottom: 2%;
+    left: 12%;
+}
+
+.like{
+    cursor: pointer;
+    color : #e74c3c
+}
+
+.unlike{
+    cursor: pointer;
+    color: #03C4A1;
+}
+
+.chat-styling{
+    color: #03C4A1;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+}
+
+.modal-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.photo-modal{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-modal img{
+    height: 85vh;
+}
+
+.comment-modal{
+    width: 50%;
+    height: 100%;
+}
+
+.unlike2{
+    color: #03C4A1;
+    cursor: pointer;
+}
+
+.card1{
+    height: 70vh;
+}
