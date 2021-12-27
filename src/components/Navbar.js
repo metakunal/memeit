@@ -32,7 +32,7 @@ const useStyles = makeStyles({
     background: '#E9A6A6'
   }
 })
-
+//Component for the Navbar
 export default function Navbar({ userData }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -69,7 +69,7 @@ export default function Navbar({ userData }) {
     history.push('/login')
   }
   const handleexplore = () => {
-    let win = window.open('https://www.metakunal.com', '_blank');
+    let win = window.open('#', '_blank');
     win.focus();
   }
   const menuId = 'primary-search-account-menu';
@@ -130,6 +130,7 @@ export default function Navbar({ userData }) {
             <HomeIcon onClick={handlebannerclick} sx={{ marginRight: '1.5rem', cursor: "pointer" }} />
             <ExploreIcon onClick={handleexplore} sx={{ marginRight: '1rem', cursor: "pointer" }} />
             <Link to="/memestudio" style={{ textDecoration: 'none' }}> <Button variant="outlined" color="secondary" style={{ color: "black" }}> <AutoAwesomeMosaicIcon />&nbsp;Memestudio</Button> </Link>
+            <a style={{ textDecoration: "none" }} href={process.env.PUBLIC_URL + "userStudio.html"} > <Button variant="outlined" color="secondary" style={{ color: "black", marginLeft: "10px" }}> <AutoAwesomeMosaicIcon />&nbsp;Userstudio</Button> </a>
             <IconButton
               size="large"
               edge="end"

@@ -14,7 +14,7 @@ import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import { Link, useHistory } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthContext';
 import { database, storage } from '../firebase';
-
+//Component for signup page
 export default function Signup() {
     const useStyles = makeStyles({
         text1: {

@@ -12,7 +12,7 @@ import './Signup.css'
 import insta from '../Assets/LOGOFRONT.gif'
 import { Link, useHistory } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
-
+//Component to add the forgot password function
 
 export default function Signup() {
     const useStyles = makeStyles({

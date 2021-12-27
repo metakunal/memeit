@@ -14,7 +14,7 @@ import AddComment from './AddComment';
 import Comments from './Comments'
 import { useHistory } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthContext'
-
+//Component for displaying individual post
 function Posts({ userData }) {
     const [posts, setPosts] = useState(null);
     const [open, setOpen] = useState(null);

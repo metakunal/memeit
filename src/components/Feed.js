@@ -4,6 +4,8 @@ import { database } from '../firebase'
 import UploadFile from './UploadFile'
 import Posts from './Posts'
 import Navbar from './Navbar';
+//Component to display the feed to the user
+//Post are shown according to the time they are posted
 function Feed() {
     const { user, logout } = useContext(AuthContext)
     const [userData, setUserData] = useState('')

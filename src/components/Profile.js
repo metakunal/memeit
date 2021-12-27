@@ -13,7 +13,7 @@ import Like2 from './Like2';
 import AddComment from './AddComment';
 import Comments from './Comments'
 import './Profile.css'
-
+// Component for displaying the user profile
 function Profile() {
     const { id } = useParams()
     const [userData, setUserdata] = useState(null)

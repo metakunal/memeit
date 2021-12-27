@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Signup from './components/Signup'
 import Login from './components/Login'
@@ -9,7 +8,7 @@ import { AuthProvider } from './Context/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
 import Profile from './components/Profile';
 import Mememaker from './components/Mememaker'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

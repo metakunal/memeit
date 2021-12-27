@@ -8,7 +8,7 @@ import { database, storage } from '../firebase';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import AutoAwesomeMosaicIcon from '@mui/icons-material/AutoAwesomeMosaic';
 import { Link } from 'react-router-dom';
-
+//Component to upload file on the feed
 function UploadFile(props) {
     console.log(props.user);
     const [error, setError] = useState('');

@@ -22,7 +22,7 @@ import img4 from '../Assets/img4.jpg';
 import img5 from '../Assets/img5.jpg';
 import { AuthContext } from '../Context/AuthContext';
 import { useHistory } from 'react-router-dom';
-
+//Component for the login page and login functionality
 export default function Login() {
     const store = useContext(AuthContext)
     console.log(store)

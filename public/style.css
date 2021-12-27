@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+body{
+    background-color: #071C21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/* h1{
+    margin: 1em 0 2em 0;
+} */
+.neonText {
+    color: #fff;
+    text-shadow:
+       /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #28FFBF,
+    0 0 82px #28FFBF,
+    0 0 92px #28FFBF,
+    0 0 102px #28FFBF,
+    0 0 151px #28FFBF;
+  }
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #28FFBF,
+        0 0 80px #28FFBF,
+        0 0 90px #28FFBF,
+        0 0 100px #28FFBF,
+        0 0 150px #28FFBF;
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+  h1 {
+    animation: flicker 1.5s infinite alternate;  
+    font-size: 80px;   
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+  h1 {
+    /* font-family: 'Vujahday Script', cursive; */
+    font-family: 'Licorice', cursive;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    /* padding: 0em; */
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+  }
+.container{
+    display: flex;
+}
+.sidebar{
+    /* background-color: rgba(255,255,255,0.1); */
+    background-color: #2D4263;
+    margin-left: 1em;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.group{
+    /* background-color: rgba(255,255,255,0.1); */
+    background-color: #6998AB;
+
+    padding: .5em;
+    margin: 1em 0;
+    border-radius: 3px;
+}
+.group *, button{
+    display: block;
+    margin: .5em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+button {
+  cursor: pointer;
+      font-style: italic;
+  padding: 10px 10px;
+  display: inline-block;
+  color: #008000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+/*creating animation effect*/
+button:hover {
+  color: #111;
+  background: #28FFBF;
+  box-shadow: 0 0 50px #28FFBF;
+}
+/* CSS for input button */
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.file-input label {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+input:hover + label,
+input:focus + label {
+  transform: scale(1.02);
+}
+input:focus + label {
+  outline: 1px solid #000;
+  outline: -webkit-focus-ring-color auto 2px;
+}
