@@ -23,7 +23,7 @@ function UploadFile(props) {
             return;
         }
         if (file.size / (1024 * 1024) > 100) {
-            setError('This video is very big');
+            setError('This image is very big');
             setTimeout(() => {
                 setError('')
             }, 2000);
@@ -88,12 +88,13 @@ function UploadFile(props) {
                                 color="primary"
                                 component="span"
                                 disabled={loading}
+                                style={{ color: "#fff" }}
                             >
                                 <CollectionsIcon />&nbsp;Upload
                             </Button>
                         </label>
                         {loading && <LinearProgress color="secondary" style={{ marginTop: '3%' }} />}
-                        <Link to="/memestudio" style={{ textDecoration: 'none' }}> <Button variant="outlined" color="primary"> <AutoAwesomeMosaicIcon />&nbsp;Memestudio</Button> </Link>
+                        <Link to="/memestudio" style={{ textDecoration: 'none' }}> <Button variant="outlined" color="primary" style={{ color: "#fff" }}> <AutoAwesomeMosaicIcon />&nbsp;Memestudio</Button> </Link>
                     </>
             }
         </div>

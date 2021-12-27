@@ -118,7 +118,7 @@ export default function Navbar({ userData }) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ background: '#E9A6A6' }}>
+      <AppBar position="fixed" sx={{ background: '#93FFD8' }}>
         <Toolbar>
           <div style={{ marginLeft: '5%' }}>
             <img src={insta} style={{ width: '20vh' }} onClick={handlebannerclick} />
